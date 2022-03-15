@@ -27,7 +27,7 @@ class ArticleFormType extends AbstractType
             ])
             ->add('content', TextareaType::class, [
                 'label' => false, 
-                'attri' => [
+                'attr' => [
                     'placeholder' =>'Ici le contenu de l\'article'
                 ],
             ])
