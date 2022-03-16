@@ -27,7 +27,6 @@
                     <td>{{ article.id }}</td>
                     <td>{{ article.category.name}}</td>
                     <td>{{ article.title|length > 20 ? article.title|slice(0,20) ~ '...' : article.title  }}</td>
-
                     <td>{{ article.content|length > 20 ? article.content|slice(0,20) ~ '...' : article.content  }}</td>
                     <td>{{ article.createdAt | date('d/m/Y') }}</td>
                     <td>{{ article.updatedAt | date('d/m/Y') }}</td>
