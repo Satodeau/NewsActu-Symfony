@@ -68,17 +68,18 @@ class ArticleFormType extends AbstractType
                 'label' =>'Photo d\'illustration',
                 // 'data_class'=> permet de paramétrer le type de classe dee données à null.
                 // par défaut data_class = File
+
                 'data_class'=> null,
                 'attr' => [
                     'data-default-file' => $options['photo'],
                 ],
-                'constraints' =>[
-                    new Image([
-                        'mineTypes' =>['image/jpeg','image/png'],
-                        'mineTypesMessage' =>["Les types de photos autorisés sont : .jpeg et .png"],
+                 'constraints' =>[
+                     new Image([
+                         'mimeTypes' => ["image/jpeg","image/png"],
+                         'mimeTypesMessage' => "Les types de photos autorisés sont : .jpeg et .png",
 
                     ]),
-                ],
+                  ],
 
             ])
             
