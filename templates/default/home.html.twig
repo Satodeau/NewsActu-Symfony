@@ -4,11 +4,9 @@
 
    <h1 class="text-center my-3">Tous les articles</h1>
 
-   {% include 'include/_flashes.html.twig' %}
-
 <div class="row">
    {% for article in articles %}
-      <div class="col-3 my-3 ms-2 mx-auto">
+      <div class="col-4 my-3 ms-2">
          <div class="card" style="width: 18rem;">
                <img src="{{ asset('uploads/') ~ article.photo }}" class="card-img-top img-card-custom"width="230" height="130" alt="{{ article.title }}">
                <div class="card-body">

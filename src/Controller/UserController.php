@@ -19,18 +19,6 @@ class UserController extends AbstractController
      */
     public function register(Request $request, EntityManagerInterface $entityManager, UserPasswordHasherInterface $passwordHasher): Response
     {
-<<<<<<< Updated upstream
-=======
-        # Si l'utilisateur est connecté,alors on le redirige.
-        if($this->getUser()){
-            
-            $this->addFlash('warning',"Vous êtes déjà inscrit");
-
-            return $this->redirectToRoute('default_home');
-
-        }
-
->>>>>>> Stashed changes
         $user = new User();
 
         $form = $this->createForm(RegisterFormType::class, $user)

@@ -19,20 +19,7 @@ security:
             security: false
         main:
             lazy: true
-<<<<<<< Updated upstream
             provider: app_user_provider
-=======
-<<<<<<< Updated upstream
-            provider: users_in_memory
-=======
-            provider: app_user_provider
-            custom_authenticator: App\Security\AppLoginAuthenticator
-            logout:
-                path: app_logout
-                # where to redirect after logout
-                # target: app_any_route
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#the-firewall

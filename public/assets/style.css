@@ -1,7 +1,3 @@
-body{
-    overflow-x: hidden;
-}
-
 .img-card-custom {
     object-fit:cover;
     width: 18rem;
